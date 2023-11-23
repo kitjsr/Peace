@@ -1,0 +1,759 @@
+<html>
+	<head>
+		<meta http-equiv="refresh" content="">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0
+			}
+			body{
+				font-family:arial;
+			}
+			#container{
+				width:100%;/**130%/
+				/*background-color:#1D334B;*/
+				
+					
+			}
+			#nav-bar{
+				height:70px;
+				width:100%;
+				background-color:#E5E5E5;
+			}
+			#nav-bar #logo{
+				height:100%;
+				width:20%;
+				background-color:;
+				float:left;
+			}
+			#nav-bar #logo img{
+				height:50px;
+				width:100px;
+				margin:10px 100px
+			}
+			#nav-bar #links{
+				height:100%;
+				width:80%;
+				background-color:#E5E5E5;
+				float:left
+			}
+			#nav-bar #links ul{
+				list-style-type:none;
+				background-color:purple;
+				margin-top:15px;
+				margin-bottom:15px;
+				margin-left:180px;
+				padding:0;
+			}
+			#nav-bar #links ul li{
+				float:left;
+				padding:10px 25px;
+				background-color:;
+				margin-left:20px;
+			}
+			#nav-bar #links ul li a{
+				color:black;
+				text-decoration:none;
+				font-size:18px;
+				font-weight:400;
+				font-family:'Silka-SemiBold',sans-serif
+			}
+			#nav-bar #links ul li:nth-child(5){
+				padding:0;
+			}
+			#nav-bar #links ul li .btn{
+				background-color:#feda00;
+				padding:9px 24px;
+				font-size:18px;
+				font-family:arial;
+				text-transform:uppercase;
+				border:;
+				
+				
+			}
+			#nav-bar #links ul li #donate{
+				font-weight:bold;
+				letter-spacing:2px
+			}
+			#nav-bar #links ul li #donate:hover{
+				background-color:#003231;
+				box-shadow:5px 5px 15px black;
+				color:#FFF
+			}
+			#nav-bar #links ul li #login{
+				font-weight:600;
+				letter-spacing:2px
+			}
+			#nav-bar #links ul li:nth-child(6){
+				padding:0;
+				margin-left:30px;
+				margin-right:10px
+			}
+			#nav-bar #links ul li img{
+				
+				height:45px;
+				width:50px;
+				opacity:1
+				
+			}
+			#nav-bar #links ul li:hover img{
+				opacity:0.7/*0 to 1 --->0.1 0.2 ....--->1% 2%...*/
+			}
+			#nav-bar #links ul li:hover{
+				border-bottom:2px solid #1D334B
+			}
+
+			#nav-bar #links ul li:nth-child(3) ul{
+    			position: absolute;
+				z-index:1000;
+    			float: none;
+    			margin-left: -35px;
+    			margin-top: 11px;
+    			width: 160px;
+				background-color:#e5e5e5;
+				display:none;
+			}
+			#nav-bar #links ul li:nth-child(6) ul{
+    			position: absolute;
+				z-index:1000;
+    			float: none;
+    			margin-left: -35px;
+    			margin-top: 11px;
+    			width: 160px;
+				background-color:#e5e5e5;
+				display:none;
+			}
+			
+			#nav-bar #links ul li:nth-child(6) ul li{
+				float: left;
+   				margin-left: 20px;
+				padding:10px 14px
+			}
+			#nav-bar #links ul li ul li:hover{
+				border:none;
+			}
+			#nav-bar #links ul #campaigns:hover ul{
+				display:block;
+				
+			}
+			#nav-bar #links ul #allFlags  ul{
+				margin-top:-10px;
+				width:120px;
+			}
+			#nav-bar #links ul #allFlags:hover ul{
+				display:block;
+			}
+			#nav-bar #links ul #allFlags:hover ul li img:hover{
+				opacity:1;
+			}
+
+			#container #sliderImage{
+				height:669px;
+				width:100%;
+				background-color:crimson;
+							
+			}
+			#sliderImage img{
+				height:100%;
+				width:100%
+			}
+			#page1{
+				height:750px;
+				width:100%;
+				background-color:#fff;
+				padding-top:50px
+			}
+			#page1 div:first-child{
+				margin:0 auto;
+				width:755px;
+			}
+			#page1 div:first-child h1{
+			
+				text-align:center;
+				font-size:50px;
+			
+				
+				
+			}
+			#page1 div:first-child h1:hover{
+				border-bottom:1px solid #1b1b1b;
+			}
+			#page1 div:first-child  p{
+				
+				text-align:justify;
+				line-height:21px;
+				
+				
+				
+			}
+			#page1 div:last-child {
+				margin-top:50px;
+				background-image:linear-gradient(to right,#E5E5E5,#003231);
+				height:200px;
+			}
+		
+			#page1 div:last-child marquee img{
+				height:100px;
+				width:200px;
+				box-shadow:5px 5px 40px #000000;
+				padding:10px 20px;
+				margin-top:40px;
+				margin-bottom:50px;
+				margin-left:7.5px;
+				margin-right:15px;
+				
+			}
+			#page1 div:first-child h1,#page1 div:first-child p{
+			  
+			  padding:18px 10px;
+			  font-family:arial;
+			 
+
+			}
+			#icons-contact img:hover{
+				transform:scale(1.1,1.1);
+			}
+
+			/*text above slider image*/
+
+			#topText{
+				margin:-550px 260px 100px 260px;
+				position:absolute;
+				
+			}
+			#topText h1 ,#topText h3{
+				font-family:arial;
+			}
+			#topText h1{
+				font-size:50px;
+				font-weight:bold;
+				color:#fff;
+				text-align:center;
+				line-height:80px;
+				letter-spacing:3px;
+				padding:5px;
+				width:1000px;
+				margin:0px auto;
+				text-shadow:5px 5px 10px black;
+			}
+
+			#topText h1:hover{
+				color:#1D334B;
+			}
+			#topText h3{
+				font-size:30px;
+				color:#fff;
+				text-align:center;
+				letter-spacing:3px;
+				margin:0px auto;
+				margin-top:40px;
+				text-shadow:5px 5px 10px black;
+				
+				
+			}
+			#topText h3:hover{
+				color:#1D334B;
+			}
+
+			/*text above slider image end */
+
+/*problem on page2 start*/
+
+			#page2{
+				height:750px;
+				width:100%;
+			}
+
+			/*box area control here start*/
+
+			#page2 #boxarea1,#page2 #boxarea2{
+				height:375px;
+				width:97.5%;
+				margin:0px 20px;/*2 box show bcz of this 6px 3px its show 3 box*/
+			
+			}
+			#page2 #boxarea1 .box,#page2 #boxarea2 .box{
+				background-color:rgba(255,255,255,0.8);
+				height:320px;
+				width:28.83%;
+				float:left;
+				margin:0 .70%;
+				padding:5px 0px;
+				
+			}
+			#page2 #boxarea1 .box,#page2 #boxarea2 .box{
+				padding:10px 20px;
+				background-color:#003231;
+				color:#fff;
+			}
+
+			/*box area control end*/
+
+			#page2 #boxarea1 .box  img,#page2 #boxarea2 .box img{
+				margin:10px 0px;
+				height:140px;
+				width:100%;
+			}
+			#page2 #boxarea1 .box a,#page2 #boxarea1 .box h4,#page2 #boxarea2 .box a,#page2 #boxarea2 .box h4{
+				margin-top:9px;
+			}
+			#page2 #boxarea1 .box a,#page2 #boxarea2 .box a{
+				font-size:17px;
+				color:white;
+				font-weight:bold;
+				text-decoration:none
+			}
+			#page2 #boxarea1 .box h4,#page2 #boxarea2 .box h4{
+				font-size:20px;
+				font-weight:bold
+			}
+			
+
+/*problem on page2 end*/
+
+/*page3 start here*/
+
+			#page3{
+				height:1000px;
+				width:100%;
+				background-color;
+			
+			
+
+			}
+			#page3 #company{
+				height:377px;
+				width:100%;
+				margin-top:20px;
+			}
+			#page3 #testimonals{
+				height:700px;
+				width:100%;
+				margin-top:20px;
+				background-color:;
+				padding-top:60px;
+			
+			}
+			
+			/*table start*/
+			#page3 #testimonals table{
+				background-color:rgba(0,0,0,0.0);
+				height:250px;
+				width:40%;
+				float:left;
+				border-radius:12px;
+				padding:18px;
+				box-shadow:0px 0px 5px black;
+			}
+			/*table end*/
+			
+			#page3 #testimonals table:hover{
+				box-shadow:none;
+				box-shadow:5px 5px 15px #003231;
+				
+			}
+			#page3 #company h2{
+				width:100%;
+				height:60px;
+				background-color:;
+				padding-top:10px;
+				font-size:50px;
+				font-family:arial;
+			}
+			#page3 #testimonals h2{
+				font-size:60px;
+				width:100%;
+				margin-bottom:50px;
+				height:80px;
+				font-family:arial;
+				background-color:;
+				
+			
+			}
+
+/*page3 end point margin padding not done in this part */
+
+			#footer{
+				height:380px;
+				width:100%;
+				background-color:rgba(28, 50, 74);
+				border-top:1px solid #1b1b1b;
+				margin-top:200px;
+				
+				
+			}
+			#footer #threeFooter div{
+				width:33.20%;
+				height:350px;
+				background-color:;
+				float:left;
+			
+				
+			}
+			#footer #threeFooter div:nth-child(1){
+				background-color:;
+				
+			}
+			#footer #threeFooter div:nth-child(2){
+				background-color:;
+			
+			}
+			#footer #threeFooter div:nth-child(3){
+				background-color:;
+
+			}
+			#footer #threeFooter div h3{
+				font-size:25px;
+				font-weight:bold;
+				font-family:arial;
+				width:300px;
+				margin:20px auto;
+				color:#ffffff
+			}
+			#footer #threeFooter div ul{
+				margin:30px auto;
+				list-style-type:none;
+				background-color:;
+				width:300px;
+				
+			}
+			#footer #threeFooter div ul li{
+				padding:5px ;
+				font-size:16px;
+				font-weight:600;
+				font-family:arial;
+				color:#ffffff
+
+			}
+			#footer #threeFooter div ul li:hover{
+				background-color:rgba(0,0,0,0.3)
+			}
+
+			
+
+
+			#footer #developerInfo{
+				border-top:1px solid white;
+				width:100%;
+				height:19px;
+				background-color:;
+				float:left;
+				font-size:20px;
+				padding:5px 0px;
+				font-weight:bold;
+				font-family:arial;
+				color:#ffffff
+			}
+
+			/*table start*/
+			
+			/*table end*/
+			
+		</style> 
+	</head>
+	<body>
+		<div id="container">
+			<div id="nav-bar">
+				<div id="logo">
+					<img src="background/logo/logo.png"/>
+				</div>
+				<div id="links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pages/about.html">About Us</a></li>
+						<li id="campaigns"><a href="#">Our Work</a>
+							<ul> 
+								<li><a href="pages/education.html">Education</a></li>
+								<li><a href="pages/health.html">Health</a></li>
+								<li id="response"><a href="pages/disaster.html">Disaster Response</a>
+									<ul style="margin-left: 139px;margin-top: -40px;"> 
+										<li><a href="pages/disaster.html">Deforestation</a></li>
+										<li><a href="pages/disaster.html">Dengue</a></li>
+										<li><a href="pages/disaster.html">Covid</a></li>
+										<li style="padding-left: 14px;padding-top: 10px;padding-bottom:10px;;"><a href="#">Floods</a></li>
+									</ul>
+								</li>
+								<li style="padding-left: 14px;padding-top: 10px;padding-bottom:10px;;"><a href="pages/food.html">Food</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact Us</a></li>
+						<li style="border:none"><div id="donate" class="btn">Donate</div></li>
+						<li style="border:none" id="allFlags">
+							<img src="flags/india.png"/>
+								<ul>
+									<li><img src="flags/india.png"/></li>
+									<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7Hgs0lEqpxP8dh2LqutukRH3_4UEFEcwvciaKsv-RHLcIMOVFz9t34jCSP27NlyK-ms&usqp=CAU"/></li>
+									<li><img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/CN-China-Flag-icon.png"/></li>
+									<li><img src="data:image/jpeg;base64,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"/></li>
+									<li style="padding-left: 15px;padding-bottom: 10px;"><img src="https://img.freepik.com/premium-vector/australia-flag-vector-isolated-best-australia-independence-day-illustration_289688-604.jpg"/></li>
+								</ul>
+						
+						</li>
+						<li><a href="#">LOGIN</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="sliderImage">
+				<img src="background/background_image.jpg" alt="" titile=""/>
+			</div>
+			<div id="topText"><h1>EVERY PEOPLE HAS EQUAL RIGHT</h1>
+					  <h1>DONATE TO MAKE A DIFFERENCE</h1>
+					  <h3>"Work For The Poor, They Will Make You Rich."</h3>
+
+			</div>
+			<div id="icons-contact" style="background-color:rgba(0,0,0,0.4);height:169px;width:50px;margin-top:-450px;position:absolute;box-shadow:1.2px 1.2px 5px black;">
+				<img src="https://w7.pngwing.com/pngs/175/452/png-transparent-facebook-logo-facebook-icon-logo-facebook-icon-blue-text-rectangle.png" height="35px" width="35px" style="margin:10px 7px;"/>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" height="35px" width="35px" style="margin:10px 7px;"/>
+				<img src="https://seeklogo.com/images/W/whatsapp-icon-logo-BDC0A8063B-seeklogo.com.png" height="35px" width="35px" style="margin:10px 7px;"/>
+			</div>
+			<div id="page1">
+				<div>
+				<h1>Support us with your donation</h1>
+				<p><span style="font-family:arial;font-size:30px;">P</span>eace foundation is a  non-profitable organizations working in various thematic areas. Peace Foundation is also an NGO and we look up to your generous support to cover our operational cost. Donate to help us continue on this movement to change lives while also availing a deduction under 80G of Income Tax Act.</p>
+
+				<p>In case you intend to donate to multiple NGOs in India, who are 	also our partners, you can write to us at <span style="color:blue"><u>peacefoundation@gmail.com</u></span> We assure to take full responsibility to rationally distribute the donation, for the projects and campaigns who are in most need.</p> 
+
+				<p>Being a tax exempt entity, donors can avail tax benefits for all donations made to DevPro-INDIAdonates under Section 80G of Income Tax Act. We assure to take full responsibility to rationally 	distribute the donation, for the projects and campaigns who are in most need</p>
+				</div>
+				
+				<div>
+					<marquee direction="" scrollamount="10" loop="-1" onmouseover="this.stop()" onmouseout="this.start()">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-QmorB7NotbiZICUIT18oGmJlYynIR6VQ&usqp=CAU"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodkOQoR-d4SVj7k61SGely_Ln0GVkq817AtZ1SzfQ9AEWvPCSJjumVhm8TmX640MWCw&usqp=CAU"/>
+
+						<img src="https://www.akshayapatra.org/wp-content/uploads/2022/07/6.jpg"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw6Piir9OX37TQVpiDM-ZFKYB94NL2-pDe_oLeOHejAJJHlIGFP2oGfHkCi66qEFiFgE&usqp=CAU"/>
+						
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-QmorB7NotbiZICUIT18oGmJlYynIR6VQ&usqp=CAU"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodkOQoR-d4SVj7k61SGely_Ln0GVkq817AtZ1SzfQ9AEWvPCSJjumVhm8TmX640MWCw&usqp=CAU"/>
+
+						<img src="https://www.akshayapatra.org/wp-content/uploads/2022/07/6.jpg"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw6Piir9OX37TQVpiDM-ZFKYB94NL2-pDe_oLeOHejAJJHlIGFP2oGfHkCi66qEFiFgE&usqp=CAU"/>
+						
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-QmorB7NotbiZICUIT18oGmJlYynIR6VQ&usqp=CAU"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodkOQoR-d4SVj7k61SGely_Ln0GVkq817AtZ1SzfQ9AEWvPCSJjumVhm8TmX640MWCw&usqp=CAU"/>
+
+						<img src="https://www.akshayapatra.org/wp-content/uploads/2022/07/6.jpg"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw6Piir9OX37TQVpiDM-ZFKYB94NL2-pDe_oLeOHejAJJHlIGFP2oGfHkCi66qEFiFgE&usqp=CAU"/>
+						
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-QmorB7NotbiZICUIT18oGmJlYynIR6VQ&usqp=CAU"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodkOQoR-d4SVj7k61SGely_Ln0GVkq817AtZ1SzfQ9AEWvPCSJjumVhm8TmX640MWCw&usqp=CAU"/>
+
+						<img src="https://www.akshayapatra.org/wp-content/uploads/2022/07/6.jpg"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw6Piir9OX37TQVpiDM-ZFKYB94NL2-pDe_oLeOHejAJJHlIGFP2oGfHkCi66qEFiFgE&usqp=CAU"/>
+						
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-QmorB7NotbiZICUIT18oGmJlYynIR6VQ&usqp=CAU"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodkOQoR-d4SVj7k61SGely_Ln0GVkq817AtZ1SzfQ9AEWvPCSJjumVhm8TmX640MWCw&usqp=CAU"/>
+
+						<img src="https://www.akshayapatra.org/wp-content/uploads/2022/07/6.jpg"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw6Piir9OX37TQVpiDM-ZFKYB94NL2-pDe_oLeOHejAJJHlIGFP2oGfHkCi66qEFiFgE&usqp=CAU"/>
+						
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-QmorB7NotbiZICUIT18oGmJlYynIR6VQ&usqp=CAU"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDodkOQoR-d4SVj7k61SGely_Ln0GVkq817AtZ1SzfQ9AEWvPCSJjumVhm8TmX640MWCw&usqp=CAU"/>
+
+						<img src="https://www.akshayapatra.org/wp-content/uploads/2022/07/6.jpg"/>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw6Piir9OX37TQVpiDM-ZFKYB94NL2-pDe_oLeOHejAJJHlIGFP2oGfHkCi66qEFiFgE&usqp=CAU"/>
+						
+
+					</marquee>
+				</div>
+			</div>
+			
+			<div style="height:680px;background-color:#fff;width:100%;padding:10px 0px;">
+					<div style="height:680px;width:100%;background-color:;text-align:center;">
+							<h1 style="font-size:70px;text-align:center;width:100%;color:#003231">Donate on various Programs</h1>
+							<h3 style="font-size:50px;text-align:center;width:100%;text-transform:capitalize;margin:30px 0px;">with peace foundation</h3>
+							<h3 style="font-size:50px;text-align:center;width:100%;text-transform:capitalize;margin-bottom:50px;">your small efforts can help others</h3>
+							<img src="background/logo/logo.png" height="200px" width="300px"/>
+					</div>
+			</div>
+
+			<div id="page2">
+				<div id="boxarea1">
+					<div class="box">
+						<img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/Hero%20-%20Transforming%20Education%20%2811%29.jpg?itok=5d6Ltxyr" />
+						<p align="justify" style="line-height:20px;letter-spacing:1.2px;">Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating to foreign exchange with objective of facilitating external trade and exchange with 
+						</p>
+						<div style="background-color:red;margin-top:20px;">
+							<h4 style="float:right;">&#8377; 1,47000</h4>
+							<a href="#" style="background-color:orange;padding :10px 23px;position:absolute;letter-spacing:2px;box-shadow:1.2px 1.2px 5px black;">Donate</a>
+						</div>
+					</div>
+					<div class="box">
+						<img src="https://static.toiimg.com/photo/msid-65185076/65185076.jpg" />
+						<p align="justify" style="line-height:20px;letter-spacing:1.2px;">Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating to foreign exchange with objective of facilitating external trade and exchange with 
+						<div style="background-color:red;margin-top:20px;">
+							<h4 style="float:right;">&#8377; 1,47000</h4>
+							<a href="#" style="background-color:orange;padding :10px 23px;position:absolute;letter-spacing:2px;box-shadow:1.2px 1.2px 5px black;">Donate</a>
+						</div>
+					</div>
+					<div class="box">
+						<img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/Hero%20-%20Transforming%20Education%20%2811%29.jpg?itok=5d6Ltxyr" />
+						<p align="justify" style="line-height:20px;letter-spacing:1.2px;">Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating to foreign exchange with objective of facilitating external trade and exchange with 
+						</p>
+						<div style="background-color:red;margin-top:20px;">
+							<h4 style="float:right;">&#8377; 1,47000</h4>
+							<a href="#" style="background-color:orange;padding :10px 23px;position:absolute;letter-spacing:2px;box-shadow:1.2px 1.2px 5px black;">Donate</a>
+						</div>
+					</div>
+
+				</div>
+				<div id="boxarea2">
+					<div class="box">
+						<img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/Hero%20-%20Transforming%20Education%20%2811%29.jpg?itok=5d6Ltxyr" />
+						<p align="justify" style="line-height:20px;letter-spacing:1.2px;">Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating to foreign exchange with objective of facilitating external trade and payments and .
+						</p>
+						<div style="background-color:red;margin-top:20px;">
+							<h4 style="float:right;">&#8377; 1,47000</h4>
+							<a href="#" style="background-color:orange;padding :10px 23px;position:absolute;letter-spacing:2px;box-shadow:1.2px 1.2px 5px black;">Donate</a>
+						</div>
+					</div>
+					<div class="box">
+						<img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/Hero%20-%20Transforming%20Education%20%2811%29.jpg?itok=5d6Ltxyr" />
+						<p align="justify" style="line-height:20px;letter-spacing:1.2px;">Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating to foreign exchange with objective of facilitating external trade and payments and 
+						</p>
+						<div style="background-color:red;margin-top:20px;">
+							<h4 style="float:right;">&#8377; 1,47000</h4>
+							<a href="#" style="background-color:orange;padding :10px 23px;position:absolute;letter-spacing:2px;box-shadow:1.2px 1.2px 5px black;">Donate</a>
+						</div>
+					</div>
+					<div class="box">
+						<img src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/Hero%20-%20Transforming%20Education%20%2811%29.jpg?itok=5d6Ltxyr" />
+						<p align="justify" style="line-height:20px;letter-spacing:1.2px;">Foreign Exchange Management Act (1999) aims to consolidate and amend the law relating to foreign exchange with objective of facilitating external trade and payments and
+						</p>
+						<div style="background-color:red;margin-top:20px;">
+							<h4 style="float:right;">&#8377; 1,47000</h4>
+							<a href="#" style="background-color:orange;padding :10px 23px;position:absolute;letter-spacing:2px;box-shadow:1.2px 1.2px 5px black;">Donate</a>
+						</div>
+					</div>
+
+				</div>			
+			</div>
+			<div id="page3">
+					<div id="company">
+							<h2 align="center">Our Partners</h2>
+							<div id="marquee-partners">
+									<marquee direction="left" scrollamount="" loop="-1" bgcolor="#fff" style="height:200px;margin-top:50px;">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" height="150px" width="250px" style="padding:0px 20px;"/>
+										<img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b" height="150px" width="150px" style="padding:0px 20px"/>
+										<img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202006/tata_power_660_120620041957.jpg?size=1200:675" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://mma.prnewswire.com/media/1477373/TCS_Logo.jpg?p=facebook" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://yt3.googleusercontent.com/ytc/APkrFKa4L26APkiX5pnMCZG7KZC0D3HK04eGwzMBTbVE=s900-c-k-c0x00ffffff-no-rj" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://cognizant.scene7.com/is/image/cognizant/strategic-partner-logo-servicenow-2?fmt=png-alpha" height="150px" width="300px" style="padding:0px 20px"/>
+										<img src="https://profoundedutech.com/blog/wp-content/uploads/2021/05/mindtree-logo.png" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" height="150px" width="250px" style="padding:0px 20px;"/>
+										<img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b" height="150px" width="150px" style="padding:0px 20px"/>
+										<img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202006/tata_power_660_120620041957.jpg?size=1200:675" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://mma.prnewswire.com/media/1477373/TCS_Logo.jpg?p=facebook" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://yt3.googleusercontent.com/ytc/APkrFKa4L26APkiX5pnMCZG7KZC0D3HK04eGwzMBTbVE=s900-c-k-c0x00ffffff-no-rj" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://cognizant.scene7.com/is/image/cognizant/strategic-partner-logo-servicenow-2?fmt=png-alpha" height="150px" width="300px" style="padding:0px 20px"/>
+										<img src="https://profoundedutech.com/blog/wp-content/uploads/2021/05/mindtree-logo.png" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" height="150px" width="250px" style="padding:0px 20px;"/>
+										<img src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b" height="150px" width="150px" style="padding:0px 20px"/>
+										<img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202006/tata_power_660_120620041957.jpg?size=1200:675" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://mma.prnewswire.com/media/1477373/TCS_Logo.jpg?p=facebook" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://yt3.googleusercontent.com/ytc/APkrFKa4L26APkiX5pnMCZG7KZC0D3HK04eGwzMBTbVE=s900-c-k-c0x00ffffff-no-rj" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="https://cognizant.scene7.com/is/image/cognizant/strategic-partner-logo-servicenow-2?fmt=png-alpha" height="150px" width="300px" style="padding:0px 20px"/>
+										<img src="https://profoundedutech.com/blog/wp-content/uploads/2021/05/mindtree-logo.png" height="150px" width="250px" style="padding:0px 20px"/>
+										<img src="data:image/png;base64,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" height="150px" width="250px"/>
+									</marquee>
+							</div>
+					</div>
+					<div id="testimonals">
+							<h2 align="center">Testimonals</h2>
+							<div id="marquee-testimonals">
+									<div style="float:left;padding:0px 140px;margin-top:60px;">
+										<table>
+											<tr>
+												<td width="10%" height="100px">
+													<img src="https://t4.ftcdn.net/jpg/03/11/50/27/360_F_311502737_TZ2RJj273mcoaZyKBSHqbdM7QMcb6HfP.jpg" height="100px" width="100%"/>
+												</td>
+												<td width="30%" style="padding:0px 10px;">
+													<span style="font-size:18px;font-weight:bold;font-family:arial;">Ravi Sharma
+													&nbsp;
+													&nbsp;
+									
+													27-10-23
+													&nbsp;
+													&nbsp;</span>
+													<span  style="font-size:18px;font-weight:bold;font-family:arial;">Donated for Education</span>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" height="145px" valign="top" style="padding-top:20px; font-weight:normal;font-size:11pt;text-align:justify;line-height:22px;letter-spacing:2px;font-family:arial;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex numquam, amet dolorum laboriosam asperiores itaque dolorem laborum molestias fugiat dicta mollitia! Ipsa necessitatibus saepe inventore fugit illum vel enim?
+												</td>
+											</tr>
+										</table>
+										<table style="float:right">
+											<tr>
+												<td width="10%" height="100px">
+													<img src="https://www.shutterstock.com/image-photo/portrait-indian-businessman-mumbai-maharashtra-260nw-323334803.jpg" height="100px" width="100%"/>
+												</td>
+												<td width="30%" style="padding:0px 10px;">
+													<span style="font-size:18px;font-weight:bold;font-family:arial;">Aditya shukla
+													&nbsp;
+													&nbsp;
+									
+													27-10-23
+													&nbsp;
+													&nbsp;</span>
+													<span style="font-size:18px;font-weight:bold;font-family:arial;">Donated for Education</span>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" height="145px" valign="top" style="padding-top:20px; font-weight:normal;font-size:11pt;text-align:justify;line-height:22px;letter-spacing:2px;font-family:arial;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex numquam, amet dolorum laboriosam asperiores itaque dolorem laborum molestias fugiat dicta mollitia! Ipsa necessitatibus saepe inventore fugit illum vel enim?
+												</td>
+											</tr>
+										</table>
+									</div>
+							</div>
+
+
+					</div>
+			</div>
+			<div id="footer">
+				<div id="threeFooter">
+					<div>
+					    	<h3><u>About Us</u></h3>
+							<ul>
+								<li>About Peace</li>
+								<li>Imapct</li>
+								<li>Reach and presence</li>
+								<li>Privicy Policy</li>
+							</ul>
+							
+					</div>
+					<div>
+						<h3><u>Our Work</u></h3>
+						<ul>
+							<li>Education</li>
+							<li>Health</li>
+							<li>Livelihood</li>
+							<li>Women Empowerment</li>
+							<li>Disaster Response</li>
+						</ul>
+					</div>
+					<div>
+						<h3><u>GET INVOLVED</u></h3>
+						<ul>
+							<li>Individual Support</li>
+							<li>Corporate Partnerships</li>
+							<li>Volunteer</li>
+							<li>School Partnerships</li>
+							<li>Careers</li>
+						</ul>
+					</div>
+				</div>
+				<div id="developerInfo">
+					<h6 align="center">Designed and Developed by Aman Kumar Verma</h6>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
